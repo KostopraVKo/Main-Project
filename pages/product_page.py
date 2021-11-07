@@ -5,6 +5,8 @@ class ProductPage(BasePage):
     def guest_can_add_product_to_basket(self):
         self.should_be_button_add_product_to_basket()
         self.add_product_to_basket()
+    
+    def test_msg_to_alert(self):
         self.send_message_in_alert()
      
     def should_be_button_add_product_to_basket(self):
